@@ -1,0 +1,486 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    width: 100%;
+    height: 100%;
+    background-color: #878998;
+    position: relative;
+}
+#overlay{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: #EEF3FA;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-left: 25px;
+    overflow: hidden;
+}
+#nav{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    /* background-color: bisque; */
+    -webkit-animation: fallDown 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+#logo{
+    width: 65px;
+}
+#nav a{
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+#man{
+    margin-left: 320px;
+    color: black !important;
+}
+
+#search{
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding-left: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    -webkit-animation: fallDown 2s cubic-bezier(0.19, 1, 0.22, 1) 0.5s both;
+}
+#search h5{
+    font-size: 13px;
+    opacity: 0.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+#filter{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#filter i{
+    color: white;
+}
+#overlay h1{
+    font-size: 50px;
+    font-weight: 800;
+    font-family: "Montserrat";
+    margin-top: 40px;
+    -webkit-animation: fallDown 3s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+#photos{
+    display: flex;
+    -webkit-animation: moveLeft 3s cubic-bezier(0.19, 1, 0.22, 1)2.5s both;
+}
+@-webkit-keyframes moveLeft{
+    from{
+        transform: translateX(800px);
+    }
+    to{
+        transform: translate(0px);
+    }
+}
+.shoes{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    margin-right: 40px;
+}
+.shoeimg{
+   width: 100%;
+   height: 60%;
+   /* background-color: #FFEFDF; */
+   position: relative;
+}
+#one{
+    background: radial-gradient(120% 50% at bottom, transparent 50%, #FFEFDF 41%);
+}
+#lebron{
+    width: 130px;
+    position: absolute;
+    bottom: 16%;
+    transform: rotate(-30deg);
+}
+.shoes h4{
+    margin-top: -15px;
+    font-size: 15px;
+}
+.shoes small{
+    margin-top: -10px;
+    font-size: 12px;
+}
+.shoes h5{
+    margin-top: -5px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+}
+#two{
+    background: radial-gradient(120% 50% at bottom, transparent 50%, #E9DCE1 41%);
+}
+#airspan{
+    width: 115px;
+    position: absolute;
+    bottom: 30%;
+    transform: rotate(-30deg);
+}
+
+#three{
+    background: radial-gradient(120% 50% at bottom, transparent 50%, #e9d2d2 41%);
+}
+#airmax{
+    width: 105px;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    transform: rotate(-30deg);
+}
+#four{
+    background: radial-gradient(120% 50% at bottom, transparent 50%, #D5E5DE 41%);
+}
+#airjordan{
+    width: 100px;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    transform: rotate(-30deg);
+}
+#rotate{
+    position: absolute;
+    top: 38%;
+    left: 35%;
+   -webkit-animation: fallDown 2s  cubic-bezier(0.19, 1, 0.22, 1) 2s both;
+}
+#rotate img{
+    position: relative;
+    width: 100px;
+   -webkit-animation: rotation 10s linear infinite 1.5s;
+}
+
+#arrows{
+    position: absolute;
+    display: flex;
+    top: 51.5%;
+    left: 53%;
+   -webkit-animation: fallDown 1s  cubic-bezier(0.19, 1, 0.22, 1) 1.5s both;
+}
+
+.arrow{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(156, 156, 156);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+#a1{
+    opacity: 0.5;
+}
+#verticalText{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    top: 20%;
+    left: 50%;
+
+    /* transform: rotate(-90deg); */
+    animation: fall 1s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+@keyframes fall{
+    from{
+        transform: translateX(150px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+#overlay1{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    background-color: #C4EAFF;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+@-webkit-keyframes fallDown{
+    from{
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@-webkit-keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#nav1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 26px;
+    -webkit-animation: fallDown 1s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+#nav1 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+#nav1 i{
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+#shoe{
+    /* background-color: red; */
+    width: 350px;
+    top: 13%;
+    margin-left: 10px;
+}
+
+#blackShoe{
+    width: 350px;
+    transform: rotate(-25deg);
+
+}
+#shoeovr{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    position: absolute;
+    top: 50%;
+    right: -50%;
+    /* background-color: #C4EAFF; */
+    transform: translate(-50%,-50%);
+}
+.dots{
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.11);
+    /* position: fixed; */
+}
+#indot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+.dots:nth-child(1){
+    position: absolute;
+    top: 51%;
+    left: 25%;
+}
+.dots:nth-child(2){
+    position: absolute;
+    top: 28%;
+    right: 17%;
+}
+.blocks{
+    width: 100px;
+    height: 50px;
+    background-color: #000000a2;
+    border-radius: 5px;
+    color: white;
+    /* display: none; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: display 8s cubic-bezier(0.19, 1, 0.22, 1) 3s both;
+}
+@keyframes display{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#b1{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+#b1 h5{
+    margin-left: 36px;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#b1 small{
+    margin-left: 13px;
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 300;
+}
+#b2{
+    position: absolute;
+    top: 17%;
+    right: 10%;
+}
+#b2 small:nth-child(1){
+    margin-left: 19px;
+    margin-top: 5px;
+}
+#b2 small:nth-child(2){
+    margin-left: 12px;
+}
+
+#color{
+    display: flex;
+    position: absolute;
+    top: 55%;
+    right: 15%;
+    -webkit-animation: moveLeft 4s ease-in-out 0.5s both;
+}
+
+
+.colors{
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.363);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+}
+.incolor{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+#i1{
+    background-color: #5B1E18;
+}
+#i2{
+    background-color: #585758;
+}
+#i3{
+    background-color: #CFC8C6;
+}
+#blackbg{
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    bottom: 0%;
+    background-color: black;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: comeUp 1.5s cubic-bezier(0.19, 1, 0.22, 1) 4s both;
+}
+
+#size{
+    margin-top: -10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(185, 185, 185);
+}
+.sizes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.sizes h2{
+    font-size: 30px;
+}
+#big{
+    color: #fff;
+    font-size: 30px;
+}
+#blackbg h3{
+    color: white;
+    font-family: "Montserrat";
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+#blackbg hr{
+    margin-top: 15px;
+}
+
+#btmnav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#btmnav h4{
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 100;
+    font-size: 15px; 
+}
+#btmnav img{
+    width: 100px;
+}
+@keyframes comeUp{
+    from{
+        transform: translateY(500px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
